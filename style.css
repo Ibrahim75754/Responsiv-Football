@@ -68,8 +68,8 @@ body{
     grid-row-gap:30px;
 }
 .player{
-    width: 328px;
-    height: 474px;
+    width: 326px;
+    height: 475px;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px gray;
@@ -150,6 +150,31 @@ body{
     background-color: lightskyblue;
 }
 
+
+.newses{
+    display: flex;
+    justify-content: space-between;
+}
+.news{
+    width: 326px;
+    height: 400px;
+    margin-right: 130px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px gray;
+    
+}
+.news img{
+    width: 100%;
+}
+.container h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
 @media screen and (max-width:668px) {
     .banner{
         flex-direction: column;
@@ -204,10 +229,18 @@ body{
         height: 143px;
     }
     .highlight-img img{
-        margin-left: 16px;
+        margin-left: 14px;
         margin-right: 16px ;
         width: 328px;
         height: 248px;
+    }
+
+
+    .newses{
+        flex-direction: column;
+    }
+    .news{
+        margin-bottom: 30px;
     }
 
 
