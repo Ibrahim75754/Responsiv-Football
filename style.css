@@ -157,11 +157,25 @@ body{
         width: 329px;
         height: 259px;
     }
+
     .container{
         margin: 20px auto;
     }
     .players{
         grid-template-columns: 1fr;
     }
-    
+
+    .footer img{
+        width: 171px;
+        height: 63px;
+    }
+    .social-link i{
+        padding: 8px;
+        margin-top: 10px;
+        margin-right: 14px;
+        margin-bottom: 10px;
+        border-radius: 16px;
+        color: gray;
+        background-color: rgb(241, 226, 226);
+    }
 }
