@@ -161,11 +161,39 @@ body{
     }
 
     .container{
-        margin: 20px auto;
+        margin: 0;
     }
     .players{
+        margin-top:20px;
+        margin-right: 11px;
+        margin-bottom: 60px;
+        margin-right: 19px;
         grid-template-columns: 1fr;
     }
+
+
+
+    .highlight{
+        flex-direction: column;
+    }
+    .highlight-contant{
+        margin-bottom: 30px;
+    }
+    .highlight-contant h2{
+        width: 292px;
+        height: 80px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlight-contant p{
+        width: 329px;
+        height: 143px;
+    }
+    .highlight-img img{
+        width: 328px;
+        height: 248px;
+    }
+
 
     .footer img{
         width: 171px;
@@ -182,10 +210,5 @@ body{
     }
 
 
-    .highlight{
-        flex-direction: column;
-    }
-    .highlight-contant{
-        margin-bottom: 30px;
-    }
+    
 }
