@@ -130,3 +130,18 @@ body{
 .footer p{
     font-size: 18px;
 }
+
+
+@media screen and (max-width:668px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-contant{
+        margin-left: 16px;
+        margin-bottom: 50px;
+    }
+    .banner-img{
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
