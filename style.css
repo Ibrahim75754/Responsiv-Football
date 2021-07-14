@@ -111,7 +111,9 @@ body{
     height: 427px;
 }
 
-
+/*--------------------*\
+    Footer style 
+\*--------------------*/
 
 .footer{
     text-align: center;
@@ -177,5 +179,13 @@ body{
         border-radius: 16px;
         color: gray;
         background-color: rgb(241, 226, 226);
+    }
+
+
+    .highlight{
+        flex-direction: column;
+    }
+    .highlight-contant{
+        margin-bottom: 30px;
     }
 }
