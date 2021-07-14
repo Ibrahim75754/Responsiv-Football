@@ -60,11 +60,13 @@ body{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:30px;
 }
 .player{
+    width: 330px;
+    height: 474px;
     padding: 15px;
-    margin-right: 30px;
-    margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px gray;
 }
@@ -140,8 +142,27 @@ body{
         margin-left: 16px;
         margin-bottom: 50px;
     }
+    .banner-contant h1{
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+    }
     .banner-img{
         margin-left: 6px;
         margin-right: 6px;
+    }
+    .banner-img img{
+        width: 329px;
+        height: 259px;
+    }
+    .container{
+        margin: 20px auto;
+    }
+    .players{
+        grid-template-columns: 1fr;
+    }
+    .player{
+        margin-left: 20px;
     }
 }
