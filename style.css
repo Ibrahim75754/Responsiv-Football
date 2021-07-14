@@ -16,11 +16,14 @@ body{
 \*--------------------*/
 
 .banner{
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 85px;
     display: flex;
     justify-content: center;
     background-color: #2D25A0;
+}
+.banner:hover .banner-img img{
+    transform: scale(1.2);
 }
 .banner-contant{
     margin-left: 156px;
@@ -51,6 +54,7 @@ body{
 .banner-img img{
     width: 556px;
     height: 438px;
+    transition: transform 1.5s;
 }
 
 /*--------------------*\
@@ -64,7 +68,7 @@ body{
     grid-row-gap:30px;
 }
 .player{
-    width: 330px;
+    width: 328px;
     height: 474px;
     padding: 15px;
     border-radius: 5px;
@@ -135,6 +139,16 @@ body{
     font-size: 18px;
 }
 
+/*--------------------*\
+    Partnar style 
+\*--------------------*/
+.partnar{
+    padding: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: lightskyblue;
+}
 
 @media screen and (max-width:668px) {
     .banner{
@@ -190,6 +204,8 @@ body{
         height: 143px;
     }
     .highlight-img img{
+        margin-left: 16px;
+        margin-right: 16px ;
         width: 328px;
         height: 248px;
     }
