@@ -8,36 +8,36 @@ body{
  
 }
 .container{
-    margin: 70px 180px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 /*--------------------*\
     banner style 
 \*--------------------*/
 
-.banner{
-    padding-top: 50px;
-    padding-bottom: 85px;
-    display: flex;
-    justify-content: center;
+.banner-section{
+    margin-bottom: 70px;
     background-color: #2D25A0;
+}
+.banner{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .banner:hover .banner-img img{
     transform: scale(1.2);
 }
 .banner-contant{
-    margin-left: 156px;
-    width: 50%;
+    
     
 }
 .banner-contant h1{
     width: 485px;
-    height: 230px;
     font-size: 64px;
-    font-weight: 700px;
-    line-height: 80px;
     color: white;
-    
 }
 .button{
     padding: 10px 24px;
@@ -48,19 +48,30 @@ body{
 .fa-arrow-right{
     margin-left: 8px;
 }
+.banner-img{
+    width: 35%;
+}
+.banner-img img{
+    width: 100%;
+    transition: transform 1.5s;
+}
+/* 
+    
+
 .banner-img{ 
     width: 50%;
 }
 .banner-img img{
-    width: 556px;
-    height: 438px;
-    transition: transform 1.5s;
-}
+   
+    
+} */
 
 /*--------------------*\
     player list style 
 \*--------------------*/
-
+.player-section{
+    display: none;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -85,6 +96,9 @@ body{
 /*--------------------*\
     Highlights style 
 \*--------------------*/
+.highlight-section{
+    display: none;
+}
 .highlight{
     display: flex;
     justify-content: space-between;
@@ -167,41 +181,33 @@ body{
 .news img{
     width: 100%;
 }
-.container h1{
+.container>h1{
     text-align: center;
     font-size: 40px;
 }
 
 
+/*-------------------------------------------------------------------------------------*\
+                                    Media  Query
+\*-------------------------------------------------------------------------------------*/
+
 
 
 @media screen and (max-width:668px) {
     .banner{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .banner-contant{
-        margin-left: 16px;
-        margin-bottom: 50px;
+        width: 100%;
     }
     .banner-contant h1{
-        margin-left: 20px;
         width: 278px;
-        height: 138px;
         font-size: 36px;
-        line-height: 50px;
     }
     .banner-img{
-        margin-left: 6px;
-        margin-right: 6px;
-    }
-    .banner-img img{
-        width: 329px;
-        height: 259px;
+       width: 100%;
     }
 
-    .container{
-        margin: 0;
-    }
     .players{
         margin-top:20px;
         margin-right: 11px;
