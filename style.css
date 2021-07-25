@@ -82,6 +82,8 @@ body{
     line-height: 40px;
 }
 
+
+
 /*--------------------*\
     Highlights style 
 \*--------------------*/
@@ -117,6 +119,32 @@ body{
     width: 567px;
     height: 427px;
 }
+
+
+
+/*--------------------*\
+    News style 
+\*--------------------*/
+.news-section h1{
+    text-align: center;
+    font-size: 40px;
+}
+.newses{
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+.news{
+    width: 30%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px gray;
+    
+}
+.news img{
+    width: 100%;
+}
+
 
 /*--------------------*\
     Footer style 
@@ -154,26 +182,7 @@ body{
 }
 
 
-.newses{
-    display: flex;
-    justify-content: space-between;
-}
-.news{
-    width: 326px;
-    height: 400px;
-    margin-right: 100px;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px gray;
-    
-}
-.news img{
-    width: 100%;
-}
-.container>h1{
-    text-align: center;
-    font-size: 40px;
-}
+
 
 
 /*-------------------------------------------------------------------------------------*\
@@ -197,10 +206,20 @@ body{
     .banner-img{
        width: 100%;
     }
-    
+
     /*------------------------------ player-section ------------------------*/
     .players{
         grid-template-columns: 1fr;
+    }
+    /*------------------------------ news-section ------------------------*/
+    .newses{
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .news{
+        width: 100%;
+        margin-bottom: 30px;
     }
 
 
@@ -227,16 +246,6 @@ body{
         width: 328px;
         height: 248px;
     }
-
-
-    .newses{
-        flex-direction: column;
-    }
-    .news{
-        margin-bottom: 30px;
-    }
-
-
     .footer img{
         width: 171px;
         height: 63px;
